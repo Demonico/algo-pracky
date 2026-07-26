@@ -1,0 +1,31 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[manifest]
+members = [
+    "common",
+    "euler",
+    "python-practice",
+]
+
+[[package]]
+name = "common"
+version = "0.1.0"
+source = { editable = "common" }
+
+[[package]]
+name = "euler"
+version = "0.1.0"
+source = { virtual = "euler" }
+dependencies = [
+    { name = "common" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "common", editable = "common" }]
+
+[[package]]
+name = "python-practice"
+version = "0.1.0"
+source = { virtual = "." }

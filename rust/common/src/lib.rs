@@ -1,18 +1,3 @@
-// pub fn add(left: u64, right: u64) -> u64 {
-//     left + right
-// }
-//
-// #[cfg(test)]
-// mod tests {
-//     use super::*;
-//
-//     #[test]
-//     fn it_works() {
-//         let result = add(2, 2);
-//         assert_eq!(result, 4);
-//     }
-// }
-
 /// Returns a prime vector up to and including `limit`, where index i is
 /// true iff i is prime.
 pub fn sieve_of_eratosthenes(limit: usize) -> Vec<i64> {
